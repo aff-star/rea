@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.7.0](https://github.com/aff-star/rea/compare/rea-agents-6.6.0...rea-agents-6.7.0) (2026-10-14)
+
+
+### Continuous Integration
+
+* remove project-specific test workflows, keep only release-please ([3b45d8c](https://github.com/aff-star/rea/commit/3b45d8c145430de19674e4a536430c16ce18647e))
+
 ## [6.6.0](https://github.com/aff-star/rea/compare/rea-agents-6.5.0...rea-agents-6.6.0) (2026-10-14)
 
 
