@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.6.0](https://github.com/aff-star/rea/compare/rea-agents-6.5.0...rea-agents-6.6.0) (2026-10-14)
+
+
+### Continuous Integration
+
+* simplify release workflow, remove custom validation and npm/MCP publish ([938f78f](https://github.com/aff-star/rea/commit/938f78f137e43f3638c7e94a8a5c12cae2a6158e))
+
 ## [6.5.0](https://github.com/aff-star/rea/compare/rea-agents-6.4.0...rea-agents-6.5.0) (2026-10-14)
 
 
