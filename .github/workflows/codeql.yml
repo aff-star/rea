@@ -59,7 +59,7 @@ jobs:
       run: ${{ steps.scope.outputs.run }}
       languages: ${{ steps.scope.outputs.languages }}
     steps:
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           # Keep the nonzero branch first: numeric 0 is falsy in Actions expressions.
           fetch-depth: ${{ github.event_name != 'pull_request' && 1 || 0 }}
@@ -95,7 +95,7 @@ jobs:
       matrix:
         language: ${{ fromJSON(needs.scope.outputs.languages) }}
     steps:
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
       - name: Initialize production analysis
