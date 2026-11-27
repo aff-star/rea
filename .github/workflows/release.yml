@@ -35,7 +35,9 @@ concurrency:
 jobs:
   release-proposal:
     name: Update release proposal
-    if: github.event_name == 'push'
+    # Forks inherit tags inconsistently and must not propose releases for a
+    # manifest they do not own; only the canonical repository publishes.
+    if: github.event_name == 'push' && !github.event.repository.fork
     runs-on: ubuntu-latest
     permissions:
       contents: write
